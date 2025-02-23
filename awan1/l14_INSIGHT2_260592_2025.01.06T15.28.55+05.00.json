@@ -1,0 +1,24 @@
+{
+    "Markers": [
+    ],
+    "connectionType": "bluetooth",
+    "demographics": {
+        "birthday": null,
+        "countryOfInfluence": {
+            "iso": "",
+            "printable": ""
+        },
+        "countryOfResidence": {
+            "iso": "",
+            "printable": ""
+        },
+        "gender": "M"
+    },
+    "exportApp": "com.emotiv.emotivpro",
+    "exportTime": "2025-01-07T18:03:20.030+05:00",
+    "headsetType": "INSIGHT2",
+    "mappings": null,
+    "montageType": "UNKNOWN",
+    "recordId": "df6a5d21-f6d2-40c8-b61a-a2f7f009456e",
+    "user": "on1423"
+}
