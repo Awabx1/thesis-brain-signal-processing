@@ -10,10 +10,12 @@ CLASS_INTERVALS = {
 }
 
 def process_participant(participant_folder):
-    processed_folder = f"{participant_folder}_processed"
+    
+    csv_file_path=f'original/{participant_folder}'
+    processed_folder = f"processed/{participant_folder}"
     os.makedirs(processed_folder, exist_ok=True)
 
-    for file in os.listdir(participant_folder):
+    for file in os.listdir(csv_file_path):
         if not file.endswith('.md.pm.bp.csv'):
             continue
 
@@ -24,7 +26,7 @@ def process_participant(participant_folder):
 
         (start_sec, end_sec) = CLASS_INTERVALS[class_code]
 
-        csv_path = os.path.join(participant_folder, file)
+        csv_path = os.path.join(csv_file_path, file)
         
         # Try skiprows=[0] or skiprows=[0,1], depending on your file
         df = pd.read_csv(csv_path, skiprows=[0], header=0)
@@ -48,3 +50,4 @@ def process_participant(participant_folder):
 
 # Example usage:
 process_participant('awan1')
+process_participant('abdulhadi1')
